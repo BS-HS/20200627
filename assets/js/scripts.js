@@ -1,9 +1,9 @@
 $(document).ready(function(){
     modalUi();
     $('.draw').sakura();
-    $("img").lazyload({
-        threshold : 300,
-    });
+    // $("img").lazyload({
+    //     threshold : 300,
+    // });
 
     // Set the date we're counting down to
     var countDownDate = new Date("jun 27, 2020").getTime();
@@ -153,307 +153,54 @@ $(document).ready(function(){
         window.history.back();
     });
 
-    $(document).on('click', '.img_list li > a.slide-1', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(1, 0);
-    });
 
-    $(document).on('click', '.img_list li > a.slide-2', function(){
+    $(document).on('click', '.img_list li > a', function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
         });
-        swiper.slideTo(2, 0);
+        if($(this).hasClass('slide-1')){
+            swiper.slideTo(0, 0);
+        } if($(this).hasClass('slide-2')){
+            swiper.slideTo(1, 0);
+        } if($(this).hasClass('slide-3')){
+            swiper.slideTo(2, 0);
+        } if($(this).hasClass('slide-4')){
+            swiper.slideTo(3, 0);
+        }if($(this).hasClass('slide-5')){
+            swiper.slideTo(4, 0);
+        }if($(this).hasClass('slide-6')){
+            swiper.slideTo(5, 0);
+        }if($(this).hasClass('slide-7')){
+            swiper.slideTo(6, 0);
+        }if($(this).hasClass('slide-8')){
+            swiper.slideTo(7, 0);
+        }if($(this).hasClass('slide-9')){
+            swiper.slideTo(8, 0);
+        }if($(this).hasClass('slide-10')){
+            swiper.slideTo(9, 0);
+        }if($(this).hasClass('slide-11')){
+            swiper.slideTo(10, 0);
+        }if($(this).hasClass('slide-12')){
+            swiper.slideTo(11, 0);
+        }if($(this).hasClass('slide-13')){
+            swiper.slideTo(12, 0);
+        }if($(this).hasClass('slide-14')){
+            swiper.slideTo(13, 0);
+        }if($(this).hasClass('slide-15')){
+            swiper.slideTo(14, 0);
+        }if($(this).hasClass('slide-16')){
+            swiper.slideTo(15, 0);
+        }if($(this).hasClass('slide-17')){
+            swiper.slideTo(16, 0);
+        }if($(this).hasClass('slide-18')){
+            swiper.slideTo(17, 0);
+        }
     });
-
-    $(document).on('click', '.img_list li > a.slide-3', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(3, 0);
-    });
-
-    $(document).on('click', '.img_list li > a.slide-4', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(4, 0);
-    });
-
-    $(document).on('click', '.img_list li > a.slide-5', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(5, 0);
-    });
-
-    $(document).on('click', '.img_list li > a.slide-6', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(6, 0);
-    });
-
-    $(document).on('click', '.img_list li > a.slide-7', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(7, 0);
-    });
-
-    $(document).on('click', '.img_list li > a.slide-8', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(8, 0);
-    });
-
-    $(document).on('click', '.img_list li > a.slide-9', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(9, 0);
-    });
-
-    $(document).on('click', '.img_list li > a.slide-10', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(10, 0);
-    });
-
-    $(document).on('click', '.img_list li > a.slide-11', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(11, 0);
-    });
-    $(document).on('click', '.img_list li > a.slide-12', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(12, 0);
-    });
-
-    $(document).on('click', '.img_list li > a.slide-13', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(13, 0);
-    });
-    $(document).on('click', '.img_list li > a.slide-14', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(14, 0);
-    });
-    $(document).on('click', '.img_list li > a.slide-15', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(15, 0);
-    });
-    $(document).on('click', '.img_list li > a.slide-16', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(16, 0);
-    });
-    $(document).on('click', '.img_list li > a.slide-17', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(17, 0);
-    });
-    $(document).on('click', '.img_list li > a.slide-18', function(){
-        window.history.pushState({},'modal', '/modal');
-        modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 18,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-            loop: true,
-        });
-        swiper.slideTo(18, 0);
-    });
-
-
     window.onpopstate = history.onpushstate = function(e) {
         if(window.location.href.split('/').pop().indexOf('modal#myModal')===-1){ // 마지막 segment가 cards라면 모달이 아닌 리스트인 상태이어야한다.
             modal.close(); // 현재의 모달을 닫는다.

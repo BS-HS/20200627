@@ -142,6 +142,7 @@ $(document).ready(function(){
 
     $(".img_list li> a.slide-1").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -152,9 +153,9 @@ $(document).ready(function(){
         });
         swiper.slideTo(0, 0);
     });
-
     $(".img_list li> a.slide-2").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -167,6 +168,7 @@ $(document).ready(function(){
     });
     $(".img_list li> a.slide-3").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -177,9 +179,9 @@ $(document).ready(function(){
         });
         swiper.slideTo(2, 0);
     });
-
     $(".img_list li> a.slide-4").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -190,9 +192,9 @@ $(document).ready(function(){
         });
         swiper.slideTo(3, 0);
     });
-
     $(".img_list li> a.slide-5").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -203,9 +205,9 @@ $(document).ready(function(){
         });
         swiper.slideTo(4, 0);
     });
-
     $(".img_list li> a.slide-6").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -216,9 +218,9 @@ $(document).ready(function(){
         });
         swiper.slideTo(5, 0);
     });
-
     $(".img_list li> a.slide-7").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -229,9 +231,9 @@ $(document).ready(function(){
         });
         swiper.slideTo(6, 0);
     });
-
     $(".img_list li> a.slide-8").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -242,9 +244,9 @@ $(document).ready(function(){
         });
         swiper.slideTo(7, 0);
     });
-
     $(".img_list li> a.slide-9").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -255,9 +257,9 @@ $(document).ready(function(){
         });
         swiper.slideTo(8, 0);
     });
-
     $(".img_list li> a.slide-10").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -268,9 +270,9 @@ $(document).ready(function(){
         });
         swiper.slideTo(9, 0);
     });
-
     $(".img_list li> a.slide-11").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -281,9 +283,9 @@ $(document).ready(function(){
         });
         swiper.slideTo(10, 0);
     });
-
     $(".img_list li> a.slide-12").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -296,6 +298,7 @@ $(document).ready(function(){
     });
     $(".img_list li> a.slide-13").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -308,6 +311,7 @@ $(document).ready(function(){
     });
     $(".img_list li> a.slide-14").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -320,6 +324,7 @@ $(document).ready(function(){
     });
     $(".img_list li> a.slide-15").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -332,6 +337,7 @@ $(document).ready(function(){
     });
     $(".img_list li> a.slide-16").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -344,6 +350,7 @@ $(document).ready(function(){
     });
     $(".img_list li> a.slide-17").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -356,6 +363,7 @@ $(document).ready(function(){
     });
     $(".img_list li> a.slide-18").on("click", function () {
         modal.show(); //팝업 열기
+        $(".modal").addClass('open');
         var swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -368,15 +376,16 @@ $(document).ready(function(){
     });
 
     $(".close").on("click", function () {
-
         modal.hide(); //팝업 닫기
-
+        $(".modal").removeClass('open');
     });
 
-    window.addEventListener("hashchange", function(e) {
-        $('.modal .close').trigger('click')
-    })
-
+    if($(".modal").hasClass('open')){
+        window.addEventListener("hashchange", function(e) {
+            $('.modal .close').trigger('click');
+            $(".modal").removeClass('open');
+        })
+    }
 
 });
 

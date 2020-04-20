@@ -153,6 +153,20 @@ $(document).ready(function(){
     }).on('click', '.img_list li > a', function(){
         window.history.pushState({}, '', '/modal');
         modal.open();
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            centeredSlides: true,
+            simulateTouch: false,
+        });
+        if($('.img_list li > a').hasClass('slide-1')){
+            swiper.slideTo(0, 0);
+        }
+        if($('.img_list li > a').hasClass('slide-2')){
+            swiper.slideTo(1, 0);
+        }
     });
 
     window.onpopstate = history.onpushstate = function(e) {
@@ -160,244 +174,241 @@ $(document).ready(function(){
             modal.close(); // 현재의 모달을 닫는다.
         }
     }
-
-    $(".img_list li> a.slide-1").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(0, 0);
-        window.addEventListener("hashchange", function(e) {
-            $('.modal .close').trigger('click');
-        });
-    });
-    $(".img_list li> a.slide-2").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(1, 0);
-    });
-    $(".img_list li> a.slide-3").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(2, 0);
-    });
-    $(".img_list li> a.slide-4").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(3, 0);
-    });
-    $(".img_list li> a.slide-5").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(4, 0);
-    });
-    $(".img_list li> a.slide-6").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(5, 0);
-    });
-    $(".img_list li> a.slide-7").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(6, 0);
-    });
-    $(".img_list li> a.slide-8").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(7, 0);
-    });
-    $(".img_list li> a.slide-9").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(8, 0);
-    });
-    $(".img_list li> a.slide-10").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(9, 0);
-    });
-    $(".img_list li> a.slide-11").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(10, 0);
-    });
-    $(".img_list li> a.slide-12").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(11, 0);
-    });
-    $(".img_list li> a.slide-13").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(12, 0);
-    });
-    $(".img_list li> a.slide-14").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(13, 0);
-    });
-    $(".img_list li> a.slide-15").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(14, 0);
-    });
-    $(".img_list li> a.slide-16").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(15, 0);
-    });
-    $(".img_list li> a.slide-17").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(16, 0);
-    });
-    $(".img_list li> a.slide-18").on("click", function () {
-        // modal.show(); //팝업 열기
-        // $(".modal").addClass('open');
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true,
-            simulateTouch: false,
-        });
-        swiper.slideTo(17, 0);
-    });
+    //
+    // $(".img_list li> a.slide-1").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(0, 0);
+    // });
+    // $(".img_list li> a.slide-2").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(1, 0);
+    // });
+    // $(".img_list li> a.slide-3").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(2, 0);
+    // });
+    // $(".img_list li> a.slide-4").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(3, 0);
+    // });
+    // $(".img_list li> a.slide-5").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(4, 0);
+    // });
+    // $(".img_list li> a.slide-6").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(5, 0);
+    // });
+    // $(".img_list li> a.slide-7").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(6, 0);
+    // });
+    // $(".img_list li> a.slide-8").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(7, 0);
+    // });
+    // $(".img_list li> a.slide-9").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(8, 0);
+    // });
+    // $(".img_list li> a.slide-10").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(9, 0);
+    // });
+    // $(".img_list li> a.slide-11").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(10, 0);
+    // });
+    // $(".img_list li> a.slide-12").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(11, 0);
+    // });
+    // $(".img_list li> a.slide-13").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(12, 0);
+    // });
+    // $(".img_list li> a.slide-14").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(13, 0);
+    // });
+    // $(".img_list li> a.slide-15").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(14, 0);
+    // });
+    // $(".img_list li> a.slide-16").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(15, 0);
+    // });
+    // $(".img_list li> a.slide-17").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(16, 0);
+    // });
+    // $(".img_list li> a.slide-18").on("click", function () {
+    //     // modal.show(); //팝업 열기
+    //     // $(".modal").addClass('open');
+    //     var swiper = new Swiper('.swiper-container', {
+    //         navigation: {
+    //             nextEl: '.swiper-button-next',
+    //             prevEl: '.swiper-button-prev',
+    //         },
+    //         centeredSlides: true,
+    //         simulateTouch: false,
+    //     });
+    //     swiper.slideTo(17, 0);
+    // });
 
     // $(".close").on("click", function () {
     //     modal.hide(); //팝업 닫기

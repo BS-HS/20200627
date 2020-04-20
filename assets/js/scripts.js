@@ -138,7 +138,6 @@ $(document).ready(function(){
         }
     });
 
-
     var modal = $("#myModal"); //팝업 div
 
     $(".img_list li> a.slide-1").on("click", function () {
@@ -373,6 +372,10 @@ $(document).ready(function(){
         modal.hide(); //팝업 닫기
 
     });
+
+    window.addEventListener("hashchange", function(e) {
+        $('.modal .close').trigger('click')
+    })
 
 
 });

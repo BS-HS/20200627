@@ -163,6 +163,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(0, 0);
     });
@@ -177,6 +178,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(1, 0);
     });
@@ -191,6 +193,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(2, 0);
     });
@@ -205,6 +208,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(3, 0);
     });
@@ -219,6 +223,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(4, 0);
     });
@@ -233,6 +238,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(5, 0);
     });
@@ -247,6 +253,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(6, 0);
     });
@@ -261,6 +268,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(7, 0);
     });
@@ -275,6 +283,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(8, 0);
     });
@@ -289,6 +298,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(9, 0);
     });
@@ -303,6 +313,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(10, 0);
     });
@@ -316,6 +327,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(11, 0);
     });
@@ -330,6 +342,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(11, 0);
     });
@@ -343,6 +356,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(12, 0);
     });
@@ -356,6 +370,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(13, 0);
     });
@@ -369,6 +384,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(14, 0);
     });
@@ -382,6 +398,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(15, 0);
     });
@@ -395,6 +412,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(16, 0);
     });
@@ -408,6 +426,7 @@ $(document).ready(function(){
             },
             centeredSlides: true,
             simulateTouch: false,
+            loop: true,
         });
         swiper.slideTo(17, 0);
     });

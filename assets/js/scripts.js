@@ -157,6 +157,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -172,6 +174,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -187,6 +191,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -202,6 +208,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -217,6 +225,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -232,6 +242,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -247,6 +259,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -262,6 +276,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -277,6 +293,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -292,6 +310,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -307,6 +327,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -321,6 +343,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -336,6 +360,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -350,6 +376,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -364,6 +392,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -378,6 +408,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -392,6 +424,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -406,6 +440,8 @@ $(document).ready(function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 18,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',

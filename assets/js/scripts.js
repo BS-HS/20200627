@@ -162,6 +162,9 @@ $(document).ready(function(){
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            pagination: {
+                el: '.swiper-pagination',
+            },
         });
         if($(this).hasClass('slide-1')){
             swiper.slideTo(0, 0);

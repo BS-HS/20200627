@@ -154,7 +154,7 @@ $(document).ready(function(){
     });
 
 
-    $(document).on('click', '.img_list li > a', function(){
+    $(document).on('click', '.img_list li > button', function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {

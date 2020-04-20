@@ -150,8 +150,8 @@ $(document).ready(function(){
     };
     $(document).on('click', '.modal .close', function(){
         window.history.back();
-    }).on('click', '.img_list li > a', function(){
-        window.history.pushState({}, '', '/modal');
+    }).on('click', '.img_list li > a.slide-1', function(){
+        window.history.pushState({}, '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
             navigation: {
@@ -161,12 +161,19 @@ $(document).ready(function(){
             centeredSlides: true,
             simulateTouch: false,
         });
-        if($('.img_list li > a').hasClass('slide-1')){
-            swiper.slideTo(0, 0);
-        }
-        if($('.img_list li > a').hasClass('slide-2')){
-            swiper.slideTo(1, 0);
-        }
+        swiper.slideTo(0, 0);
+    }).on('click', '.img_list li > a.slide-2', function(){
+        window.history.pushState({}, '/modal');
+        modal.open();
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            centeredSlides: true,
+            simulateTouch: false,
+        });
+        swiper.slideTo(1, 0);
     });
 
     window.onpopstate = history.onpushstate = function(e) {

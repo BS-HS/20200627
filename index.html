@@ -7,13 +7,485 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no" />
-    <script>
-        var varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
 
-        if ( varUA.indexOf('android') > -1) {
-            location.href='intent://bs-hs.github.io/20200627/main.html#Intent;scheme=http;package=com.android.chrome;end'
-        } else if ( varUA.indexOf("iphone") > -1||varUA.indexOf("ipad") > -1||varUA.indexOf("ipod") > -1 ) {
-            location.href='https://bkkim.co.kr/ttest/main.html'
-        }
-    </script>
+    <!-- TODO: search engine info -->
+    <meta name="robots" content="김범수&이향신wedding" />
+    <meta name="keywords" content="김범수&이향신wedding" />
+    <meta name="title" content="김범수&이향신wedding" />
+    <meta name="description" content="김범수&이향신wedding" />
+
+    <!-- TODO: social url link image -->
+    <meta property="og:url" content="">
+    <meta property="og:title" content="김범수&이향신wedding">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="김범수&이향신wedding 홈페이지입니다.">
+
+    <!-- TODO: favicon -->
+<!--    <link rel="icon" href="favicon.ico" type="favicon.ico" />-->
+
+    <!-- TODO: import -->
+    <link rel="stylesheet" href="assets/css/lib/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/lib/nice-select.css">
+    <link rel="stylesheet" href="assets/css/lib/jquery-sakura.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+    <link rel="stylesheet" href="assets/css/lib/swiper.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/lib/lazyload.js"></script>
+    <script src="assets/js/lib/jquery-ui.js"></script>
+    <script src="assets/js/lib/jquery.nice-select.js"></script>
+    <script src="assets/js/lib/swiper.js"></script>
+    <script src="assets/js/lib/jquery-sakura.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
 </head>
+
+<body>
+
+<section>
+    <div class="cont_box main">
+        <div class="draw"></div>
+        <div class="box_title">
+            <h2 class="animated fadeInUp"><em>김범수</em><i>&</i><em>이향신</em></h2>
+            <p class="animated fadeInUp delay-05s"><em>Save</em> <em>the</em> <em>Date</em></p>
+        </div>
+        <div class="dday animated fast">
+            <p id="demo"></p>
+        </div>
+    </div>
+    
+<h1>김범수&이향신wedding</h1>
+
+<div class="skip_navigation">
+    <ul>
+        <li>
+            <a href="#Content" class="go_content">본문 바로가기</a>
+        </li>
+        <li>
+            <a href="#Gnb">메뉴 바로가기</a>
+        </li>
+    </ul>
+</div>
+
+<header>
+    <nav>
+        <ul class="lnb">
+            <li>
+                <a class="main_link on" href="#">홈</a>
+            </li>
+            <li>
+                <a class="sub01_link" href="#">초대의글</a>
+            </li>
+            <li>
+                <a class="sub02_link" href="#">갤러리</a>
+            </li>
+            <li>
+                <a class="sub03_link" href="#">오시는길</a>
+            </li>
+            <li>
+                <a class="sub04_link" href="#">연락하기</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+    <div class="cont_box sub01">
+        <div class="cont_title">
+            <h2>초대합니다</h2>
+        </div>
+        <div class="text delay-02s">
+            <p>평생을 같이하고 싶
+                ..은 사람을 만났습니다.<br/>
+                서로 아껴주고 이해하며<br/>
+                사랑 베풀며 살고 싶습니다.<br/>
+                저희 약속 위에 따뜻한 격려로 축복해<br/>
+                주셔서 힘찬 출발의 디딤이 되어 주십시오.</p>
+        </div>
+        <div class="calendar delay-04s">
+            <div class="title">
+                <h2><span>06</span></h2>
+            </div>
+            <!-- Days from previous month -->
+            <ul class="days">
+                <li class="day other-month">
+                    <div class="date">31</div>
+                </li>
+                <li class="day">
+                    <div class="date">1</div>
+                </li>
+                <li class="day">
+                    <div class="date">2</div>
+                </li>
+                <li class="day">
+                    <div class="date">3</div>
+                </li>
+                <li class="day">
+                    <div class="date">4</div>
+                </li>
+                <!-- Days in current month -->
+                <li class="day">
+                    <div class="date">5</div>
+                </li>
+                <li class="day">
+                    <div class="date">6</div>
+                </li>
+            </ul>
+            <!-- Row #2 -->
+            <ul class="days">
+                <li class="day">
+                    <div class="date">7</div>
+                </li>
+                <li class="day">
+                    <div class="date">8</div>
+                </li>
+                <li class="day">
+                    <div class="date">9</div>
+                </li>
+                <li class="day">
+                    <div class="date">10</div>
+                </li>
+                <li class="day">
+                    <div class="date">11</div>
+                </li>
+                <li class="day">
+                    <div class="date">12</div>
+                </li>
+                <li class="day">
+                    <div class="date">13</div>
+                </li>
+            </ul>
+            <!-- Row #3 -->
+            <ul class="days">
+                <li class="day">
+                    <div class="date">14</div>
+                </li>
+                <li class="day">
+                    <div class="date">15</div>
+                </li>
+                <li class="day">
+                    <div class="date">16</div>
+                </li>
+                <li class="day">
+                    <div class="date">17</div>
+                </li>
+                <li class="day">
+                    <div class="date">18</div>
+                </li>
+                <li class="day">
+                    <div class="date">19</div>
+                </li>
+                <li class="day">
+                    <div class="date">20</div>
+                </li>
+            </ul>
+            <!-- Row #4 -->
+            <ul class="days">
+                <li class="day">
+                    <div class="date">21</div>
+                </li>
+                <li class="day">
+                    <div class="date">22</div>
+                </li>
+                <li class="day">
+                    <div class="date">23</div>
+                </li>
+                <li class="day">
+                    <div class="date">24</div>
+                </li>
+                <li class="day">
+                    <div class="date">25</div>
+                </li>
+                <li class="day">
+                    <div class="date">26</div>
+                </li>
+                <li class="day d_day">
+                    <div class="date">27</div>
+                </li>
+            </ul>
+            <!-- Row #5 -->
+            <ul class="days">
+                <li class="day">
+                    <div class="date">28</div>
+                </li>
+                <li class="day">
+                    <div class="date">29</div>
+                </li>
+                <li class="day">
+                    <div class="date">30</div>
+                </li>
+                <li class="day other-month">
+                    <div class="date">1</div>
+                </li>
+                <li class="day other-month">
+                    <div class="date">2</div>
+                </li>
+                <li class="day other-month">
+                    <div class="date">3</div>
+                </li>
+                <li class="day other-month">
+                    <div class="date">4</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cont_box sub02">
+        <div class="cont_title">
+            <h2>갤러리</h2>
+        </div>
+        <div class="gallery-thumbs">
+            <ul class="img_list">
+                <li class="ft">
+                    <a href="#myModal" class="img_link slide-1">
+                        <img class="myImg" src="assets/images/img_01.jpg" alt="웨딩 이미지 1번째"/>
+                    </a>
+                </li>
+                <li class="ft delay-02s">
+                    <a href="#myModal" class="img_link slide-2">
+                        <img class="myImg" src="assets/images/img_02.jpg" alt="웨딩 이미지 2번째"/>
+                    </a>
+                </li>
+                <li class="ft delay-04s">
+                    <a href="#myModal" class="img_link slide-3">
+                        <img class="myImg" src="assets/images/img_03.jpg" alt="웨딩 이미지 3번째"/>
+                    </a>
+                </li>
+                <li class="ft delay-06s">
+                    <a href="#myModal" class="img_link slide-4">
+                        <img class="myImg" src="assets/images/img_04.jpg" alt="웨딩 이미지 4번째"/>
+                    </a>
+                </li>
+                <li class="ft delay-08s">
+                    <a href="#myModal" class="img_link slide-5">
+                        <img class="myImg" src="assets/images/img_05.jpg" alt="웨딩 이미지 5번째"/>
+                    </a>
+                </li>
+                <li class="ft delay-1s">
+                    <a href="#myModal" class="img_link slide-6">
+                        <img class="myImg" src="assets/images/img_06.jpg" alt="웨딩 이미지 6번째"/>
+                    </a>
+                </li>
+                <li class="st">
+                    <a href="#myModal" class="img_link slide-7">
+                        <img class="myImg" src="assets/images/img_07.jpg" alt="웨딩 이미지7번째"/>
+                    </a>
+                </li>
+                <li class="st delay-02s">
+                    <a href="#myModal" class="img_link slide-8">
+                        <img class="myImg" src="assets/images/img_08.jpg" alt="웨딩 이미지 8번째"/>
+                    </a>
+                </li>
+                <li class="st delay-04s">
+                    <a href="#myModal" class="img_link slide-9">
+                        <img class="myImg" src="assets/images/img_09.jpg" alt="웨딩 이미지 9번째"/>
+                    </a>
+                </li>
+                <li class="st delay-06s">
+                    <a href="#myModal" class="img_link slide-10">
+                        <img class="myImg" src="assets/images/img_10.jpg" alt="웨딩 이미지 10번째"/>
+                    </a>
+                </li>
+                <li class="st delay-08s">
+                    <a href="#myModal" class="img_link slide-11">
+                        <img class="myImg" src="assets/images/img_11.jpg" alt="웨딩 이미지 11번째"/>
+                    </a>
+                </li>
+                <li class="st delay-1s">
+                    <a href="#myModal" class="img_link slide-12">
+                        <img class="myImg" src="assets/images/img_12.jpg" alt="웨딩 이미지 12번째"/>
+                    </a>
+                </li>
+                <li class="lt">
+                    <a href="#myModal" class="img_link slide-13">
+                        <img class="myImg" src="assets/images/img_13.jpg" alt="웨딩 이미지 13번째"/>
+                    </a>
+                </li>
+                <li class="lt delay-02s">
+                    <a href="#myModal" class="img_link slide-14">
+                        <img class="myImg" src="assets/images/img_14.jpg" alt="웨딩 이미지 14번째"/>
+                    </a>
+                </li>
+                <li class="lt delay-04s">
+                    <a href="#myModal" class="img_link slide-15">
+                        <img class="myImg" src="assets/images/img_15.jpg" alt="웨딩 이미지 15번째"/>
+                    </a>
+                </li>
+                <li class="lt delay-06s">
+                    <a href="#myModal" class="img_link slide-16">
+                        <img class="myImg" src="assets/images/img_16.jpg" alt="웨딩 이미지 16번째"/>
+                    </a>
+                </li>
+                <li class="lt delay-08s">
+                    <a href="#myModal" class="img_link slide-17">
+                        <img class="myImg" src="assets/images/img_17.jpg" alt="웨딩 이미지 17번째"/>
+                    </a>
+                </li>
+                <li class="lt delay-1s">
+                    <a href="#myModal" class="img_link slide-18">
+                        <img class="myImg" src="assets/images/img_18.jpg" alt="웨딩 이미지 18번째"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="cont_box sub03">
+        <div class="cont_title">
+            <h2>오시는길</h2>
+            <p class="delay-05s">소노벨경주 . 그랜드 볼룸<br/>
+                경북 경주시 보문로 402-12<br/>
+                054-778-8383</p>
+        </div>
+        <div class="map delay-08s">
+            <img src="assets/images/map01.webp"/>
+            <div class="map_btn">
+                <div class="fl">
+                    <h3>소노벨 경주</h3>
+                    <p>오시는길 안내</p>
+                </div>
+                <div class="fr">
+                    <a class="kakao_map" href="daummaps://route?ep=35.84718211526955,129.2811860357963&by=CAR">
+                        카카오맵
+                    </a>
+                    <a class="t_map" href="https://apis.openapi.sk.com/tmap/app/routes?appKey=l7xxc1aecbb3db5a400b812e136925da6a7e&name=소노벨경주&lon=129.2811860357963&lat=35.84718211526955">
+                        티맵
+                    </a>
+                    <a class="kakao_navi" id="navi" href="#" onclick="navi();">
+                        카카오내비
+                    </a>
+                    <script type='text/javascript'>
+                        //<![CDATA[
+                        // 사용할 앱의 JavaScript 키를 설정해 주세요.
+                        Kakao.init('3eb20e1c01902182623bcfc5cc0f0fd9');
+                        // 카카오 로그인 버튼을 생성합니다.
+                        function navi(){
+                            Kakao.Navi.start({
+                                name: "소노벨경주",
+                                x: 129.2811860357963,
+                                y: 35.84718211526955,
+                                coordType: 'wgs84'
+                            });
+                        }
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont_box sub04">
+        <div class="cont_title">
+            <h2>CONTACT</h2>
+        </div>
+        <div class="contact">
+            <ul class="contact_box">
+                <li class="delay-04s">
+                    <h3>신랑에게 연락하기</h3>
+                    <p>CONTACT TO GROOM</p>
+                    <ul class="tell">
+                        <li>
+                            <a href="tel:01053069803">
+                                <img src="assets/images/phone01.webp"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sms:01053069803">
+                                <img src="assets/images/mail01.webp"/>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="delay-08s">
+                    <h3>신부에게 연락하기</h3>
+                    <p>CONTACT TO BRIDE</p>
+                    <ul class="tell">
+                        <li>
+                            <a href="tel:01096491033">
+                                <img src="assets/images/phone02.webp"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sms:01096491033">
+                                <img src="assets/images/mail02.webp"/>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div id="myModal" class="modal">
+    <a href="#" class="close">&times;</a>
+    <div class="swiper-container gallery-top">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_01.jpg" alt="웨딩 이미지 1번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_02.jpg" alt="웨딩 이미지 2번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_03.jpg" alt="웨딩 이미지 3번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_04.jpg" alt="웨딩 이미지 4번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_05.jpg" alt="웨딩 이미지 5번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_06.jpg" alt="웨딩 이미지 6번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_07.jpg" alt="웨딩 이미지7번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_08.jpg" alt="웨딩 이미지 8번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_09.jpg" alt="웨딩 이미지 9번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_10.jpg" alt="웨딩 이미지 10번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_11.jpg" alt="웨딩 이미지 11번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_12.jpg" alt="웨딩 이미지 12번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_13.jpg" alt="웨딩 이미지 13번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_14.jpg" alt="웨딩 이미지 14번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_15.jpg" alt="웨딩 이미지 15번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_16.jpg" alt="웨딩 이미지 16번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_17.jpg" alt="웨딩 이미지 17번째"/>
+            </li>
+            <li class="swiper-slide">
+                <img class="myImg" src="assets/images/img/img_18.jpg" alt="웨딩 이미지 18번째"/>
+            </li>
+        </ul>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    <div class="caption"></div>
+</div>
+
+<script>
+
+</script>
+</body>
+</html>

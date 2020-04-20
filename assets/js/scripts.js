@@ -155,7 +155,6 @@ $(document).ready(function(){
 
 
     $(document).on('click', '.img_list li > a', function(){
-
         window.history.pushState({},'modal', '/modal');
         modal.open();
         var swiper = new Swiper('.swiper-container', {
@@ -221,15 +220,10 @@ $(document).ready(function(){
         }
     });
     window.onpopstate = history.onpushstate = function(e) {
-        if(window.location.href.split('/').pop().indexOf('/modal')===-1){ // 마지막 segment가 cards라면 모달이 아닌 리스트인 상태이어야한다.
+        if(window.location.href.split('/').pop().indexOf('modal#myModal')===-1){ // 마지막 segment가 cards라면 모달이 아닌 리스트인 상태이어야한다.
             modal.close(); // 현재의 모달을 닫는다.
         }
     }
-
-    // $(".close").on("click", function () {
-    //     modal.hide(); //팝업 닫기
-    //     $(".modal").removeClass('open');
-    // });
 
 });
 

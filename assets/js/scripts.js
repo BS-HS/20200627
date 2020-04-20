@@ -157,48 +157,149 @@ $(document).ready(function(){
     $(document).on('click', '.img_list li > a', function(){
         window.history.pushState({},'modal', '/modal');
         modal.open();
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            // allowTouchMove : false,
-        });
         if($(this).hasClass('slide-1')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(0, 0);
         } if($(this).hasClass('slide-2')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(1, 0);
         } if($(this).hasClass('slide-3')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(2, 0);
         } if($(this).hasClass('slide-4')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(3, 0);
         }if($(this).hasClass('slide-5')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(4, 0);
         }if($(this).hasClass('slide-6')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(5, 0);
         }if($(this).hasClass('slide-7')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(6, 0);
         }if($(this).hasClass('slide-8')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(7, 0);
         }if($(this).hasClass('slide-9')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(8, 0);
         }if($(this).hasClass('slide-10')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(9, 0);
         }if($(this).hasClass('slide-11')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(10, 0);
         }if($(this).hasClass('slide-12')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(11, 0);
         }if($(this).hasClass('slide-13')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(12, 0);
         }if($(this).hasClass('slide-14')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(13, 0);
         }if($(this).hasClass('slide-15')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(14, 0);
         }if($(this).hasClass('slide-16')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(15, 0);
         }if($(this).hasClass('slide-17')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(16, 0);
         }if($(this).hasClass('slide-18')){
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
             swiper.slideTo(17, 0);
         }
     });

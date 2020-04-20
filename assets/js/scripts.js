@@ -162,65 +162,61 @@ $(document).ready(function(){
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
         });
         if($(this).hasClass('slide-1')){
             swiper.slideTo(0, 0);
-            swiper.navigation.update();
+            swiper.update();
         } if($(this).hasClass('slide-2')){
             swiper.slideTo(1, 0);
-            swiper.navigation.update();
+            swiper.update();
         } if($(this).hasClass('slide-3')){
             swiper.slideTo(2, 0);
-            swiper.navigation.update();
+            swiper.update();
         } if($(this).hasClass('slide-4')){
             swiper.slideTo(3, 0);
-            swiper.navigation.update();
+            swiper.update();
         }if($(this).hasClass('slide-5')){
             swiper.slideTo(4, 0);
-            swiper.navigation.update();
+            swiper.update();
         }if($(this).hasClass('slide-6')){
             swiper.slideTo(5, 0);
-            swiper.navigation.update();
+            swiper.update();
         }if($(this).hasClass('slide-7')){
             swiper.slideTo(6, 0);
-            swiper.navigation.update();
+            swiper.update();
         }if($(this).hasClass('slide-8')){
             swiper.slideTo(7, 0);
-            swiper.navigation.update();
+            swiper.update();
         }if($(this).hasClass('slide-9')){
             swiper.slideTo(8, 0);
-            swiper.navigation.update();
+            swiper.update();
         }if($(this).hasClass('slide-10')){
             swiper.slideTo(9, 0);
-            swiper.navigation.update();
+            swiper.update();
         }if($(this).hasClass('slide-11')){
             swiper.slideTo(10, 0);
-            swiper.navigation.update();
+            swiper.update();
         }if($(this).hasClass('slide-12')){
             swiper.slideTo(11, 0);
-            swiper.navigation.update();
+            swiper.update();
         }if($(this).hasClass('slide-13')){
             swiper.slideTo(12, 0);
-            swiper.navigation.update();
+            swiper.update();
         }if($(this).hasClass('slide-14')){
             swiper.slideTo(13, 0);
-            swiper.navigation.update();
+            swiper.update();
         }if($(this).hasClass('slide-15')){
             swiper.slideTo(14, 0);
-            swiper.navigation.update();
+            swiper.update();
         }if($(this).hasClass('slide-16')){
             swiper.slideTo(15, 0);
-            swiper.navigation.update();
+            swiper.update();
         }if($(this).hasClass('slide-17')){
             swiper.slideTo(16, 0);
-            swiper.navigation.update();
+            swiper.update();
         }if($(this).hasClass('slide-18')){
             swiper.slideTo(17, 0);
-            swiper.navigation.update();
+            swiper.update();
         }
     });
     window.onpopstate = history.onpushstate = function(e) {

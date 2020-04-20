@@ -165,6 +165,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(0, 0);
+            swiper.navigation.update();
         } if($(this).hasClass('slide-2')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -173,6 +174,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(1, 0);
+            swiper.navigation.update();
         } if($(this).hasClass('slide-3')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -181,6 +183,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(2, 0);
+            swiper.navigation.update();
         } if($(this).hasClass('slide-4')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -189,6 +192,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(3, 0);
+            swiper.navigation.update();
         }if($(this).hasClass('slide-5')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -197,6 +201,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(4, 0);
+            swiper.navigation.update();
         }if($(this).hasClass('slide-6')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -205,6 +210,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(5, 0);
+            swiper.navigation.update();
         }if($(this).hasClass('slide-7')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -213,6 +219,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(6, 0);
+            swiper.navigation.update();
         }if($(this).hasClass('slide-8')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -221,6 +228,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(7, 0);
+            swiper.navigation.update();
         }if($(this).hasClass('slide-9')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -229,6 +237,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(8, 0);
+            swiper.navigation.update();
         }if($(this).hasClass('slide-10')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -237,6 +246,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(9, 0);
+            swiper.navigation.update();
         }if($(this).hasClass('slide-11')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -245,6 +255,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(10, 0);
+            swiper.navigation.update();
         }if($(this).hasClass('slide-12')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -253,6 +264,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(11, 0);
+            swiper.navigation.update();
         }if($(this).hasClass('slide-13')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -261,6 +273,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(12, 0);
+            swiper.navigation.update();
         }if($(this).hasClass('slide-14')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -269,6 +282,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(13, 0);
+            swiper.navigation.update();
         }if($(this).hasClass('slide-15')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -277,6 +291,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(14, 0);
+            swiper.navigation.update();
         }if($(this).hasClass('slide-16')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -285,6 +300,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(15, 0);
+            swiper.navigation.update();
         }if($(this).hasClass('slide-17')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -293,6 +309,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(16, 0);
+            swiper.navigation.update();
         }if($(this).hasClass('slide-18')){
             var swiper = new Swiper('.swiper-container', {
                 navigation: {
@@ -301,6 +318,7 @@ $(document).ready(function(){
                 },
             });
             swiper.slideTo(17, 0);
+            swiper.navigation.update();
         }
     });
     window.onpopstate = history.onpushstate = function(e) {

@@ -22,11 +22,13 @@ $(document).ready(function(){
 
         // Output the result in an element with id="demo"
         document.getElementById("demo").innerHTML = "D - " + days + " day";
+        document.getElementById("demo2").innerHTML = "D - Day  " + days ;
 
         // If the count down is over, write some text
         if (distance < 0) {
             clearInterval(x);
             document.getElementById("demo").innerHTML = "EXPIRED";
+            document.getElementById("demo2").innerHTML = "EXPIRED";
         }
     }, 1000);
     $(window).load(function () {
@@ -51,7 +53,7 @@ $(document).ready(function(){
             $('section').scrollTop(headertop + headertop01 + headertop02 + 1);
         });
         $('.lnb .sub04_link').on('click', function () {
-            $('section').scrollTop(headertop + headertop01 + headertop02 + headertop03);
+            $('section').scrollTop(headertop + headertop01 + headertop02 + headertop03 + 50);
         });
     });
     $('section').scroll(function () {
@@ -66,11 +68,13 @@ $(document).ready(function(){
             $('.dday').removeClass('fadeIn');
             // $('.dday').addClass('fadeOut');
             $('.dday').css({position : 'relative'});
+            $('.scroll_icon').removeClass('fadeOut');
         }
         if (scrollValue > 168){
             $('.dday').addClass('fadeIn');
             $('.dday').removeClass('fadeOut');
             $('.dday').css({position : 'fixed', top:0});
+            $('.scroll_icon').addClass('fadeOut');
         }
         if (scrollValue < headertop){
             $('header').css({position : 'relative', top:0});
@@ -90,6 +94,7 @@ $(document).ready(function(){
             $('.sub01').css({marginTop : 40});
             $('.dday').css({position : 'relative', top:0});
             $('.sub01 .calendar').addClass('animated fadeInUp');
+            $('.sub01 .dday2').addClass('animated fadeInUp');
             $('.lnb .main_link').removeClass('on');
             $('.lnb .sub02_link').removeClass('on');
             $('.lnb .sub03_link').removeClass('on');
@@ -103,7 +108,7 @@ $(document).ready(function(){
         if (scrollValue > headertop + headertop01 - (headertop01/3)){
             $('.sub02 .img_list li.st').addClass('animated fadeInUp');
         }
-        if (scrollValue > headertop + headertop01){
+        if (scrollValue > headertop + headertop01 - 50){
             $('.lnb .main_link').removeClass('on');
             $('.lnb .sub01_link').removeClass('on');
             $('.lnb .sub03_link').removeClass('on');
@@ -118,7 +123,7 @@ $(document).ready(function(){
         if (scrollValue > headertop + headertop01 + headertop02 - (headertop02/3)){
             $('.sub03 .map').addClass('animated fadeIn');
         }
-        if (scrollValue > headertop + headertop01 + headertop02){
+        if (scrollValue > headertop + headertop01 + headertop02 - 50){
             $('.lnb .main_link').removeClass('on');
             $('.lnb .sub01_link').removeClass('on');
             $('.lnb .sub03_link').addClass('on');
@@ -128,7 +133,7 @@ $(document).ready(function(){
         if(scrollValue > headertop + headertop01 + headertop02 + headertop03 - (headertop03/2)){
             $('.sub04 .cont_title').addClass('animated fadeInDown');
         }
-        if(scrollValue > headertop + headertop01 + headertop02 + headertop03 - (headertop03/3)){
+        if(scrollValue > headertop + headertop01 + headertop02 + headertop03){
             $('.lnb .main_link').removeClass('on');
             $('.lnb .sub01_link').removeClass('on');
             $('.lnb .sub03_link').removeClass('on');

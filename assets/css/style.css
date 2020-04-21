@@ -347,7 +347,7 @@ section {
     overflow-y: auto;
     scroll-behavior: smooth;
     background-attachment: fixed;
-    background: url(../images/main_bg.webp) no-repeat;
+    background: url(../images/main_bg.jpg) no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center

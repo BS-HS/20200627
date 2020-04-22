@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no" />
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script>
         var varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
 
@@ -15,5 +16,40 @@
         } else if ( varUA.indexOf("iphone") > -1||varUA.indexOf("ipad") > -1||varUA.indexOf("ipod") > -1 ) {
             location.href='https://bs-hs.github.io/20200627/main.html'
         }
+    </script>
+    <script>
+        Kakao.Link.createDefaultButton({
+            container: '#CONTAINER_ID',
+            objectType: 'feed',
+            content: {
+                title: '디저트 사진',
+                description: '아메리카노, 빵, 케익',
+                imageUrl:
+                    'http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+                link: {
+                    mobileWebUrl: 'https://bs-hs.github.io/20200627/',
+                    androidExecParams: 'test',
+                },
+            },
+            social: {
+                likeCount: 10,
+                commentCount: 20,
+                sharedCount: 30,
+            },
+            buttons: [
+                {
+                    title: '웹으로 이동',
+                    link: {
+                        mobileWebUrl: 'https://bs-hs.github.io/20200627/',
+                    },
+                },
+            ],
+            success: function(response) {
+                console.log(response);
+            },
+            fail: function(error) {
+                console.log(error);
+            }
+        });
     </script>
 </head>

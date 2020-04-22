@@ -5,6 +5,12 @@ $(document).ready(function(){
     //     threshold : 300,
     // });
 
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+
+    hideURLbar();
+
     // Set the date we're counting down to
     var countDownDate = new Date("jun 27, 2020").getTime();
 
@@ -229,6 +235,8 @@ $(document).ready(function(){
             modal.close(); // 현재의 모달을 닫는다.
         }
     }
+
+
 
 });
 

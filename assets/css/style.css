@@ -623,7 +623,7 @@ section .cont_box.sub02 .img_list li:nth-child(3n) {
 
 section .cont_box.sub03 {
     position: relative;
-    padding: 0 5%;
+    padding: 10% 5% 20%;
     z-index: 2
 }
 

@@ -360,7 +360,7 @@ section .cont_box {
 }
 
 section .cont_box.main {
-    height: calc(100% - 50px);
+    height: 100%;
     position: relative;
     background: 0 0;
     z-index: 1

@@ -15,11 +15,11 @@
     <meta name="description" content="김범수&이향신wedding" />
 
     <!-- TODO: social url link image -->
-    <meta property="og:url" content="">
-    <meta property="og:title" content="김범수&이향신wedding">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="">
-    <meta property="og:description" content="김범수&이향신wedding 홈페이지입니다.">
+<!--    <meta property="og:url" content="">-->
+<!--    <meta property="og:title" content="김범수&이향신wedding">-->
+<!--    <meta property="og:type" content="website">-->
+<!--    <meta property="og:image" content="">-->
+<!--    <meta property="og:description" content="김범수&이향신wedding 홈페이지입니다.">-->
 
     <!-- TODO: favicon -->
 <!--    <link rel="icon" href="favicon.ico" type="favicon.ico" />-->
@@ -40,6 +40,47 @@
     <script src="assets/js/lib/jquery-sakura.js"></script>
     <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script src="./assets/js/scripts.js"></script>
+    <script>
+        Kakao.Link.createDefaultButton({
+            container: '#CONTAINER_ID',
+            objectType: 'feed',
+            content: {
+                title: '디저트 사진',
+                description: '아메리카노, 빵, 케익',
+                imageUrl:
+                    'http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+                link: {
+                    mobileWebUrl: 'https://developers.kakao.com',
+                    androidExecParams: 'test',
+                },
+            },
+            social: {
+                likeCount: 10,
+                commentCount: 20,
+                sharedCount: 30,
+            },
+            buttons: [
+                {
+                    title: '웹으로 이동',
+                    link: {
+                        mobileWebUrl: 'https://developers.kakao.com',
+                    },
+                },
+                {
+                    title: '앱으로 이동',
+                    link: {
+                        mobileWebUrl: 'https://developers.kakao.com',
+                    },
+                },
+            ],
+            success: function(response) {
+                console.log(response);
+            },
+            fail: function(error) {
+                console.log(error);
+            }
+        });
+    </script>
 </head>
 
 <body>

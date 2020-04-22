@@ -5,7 +5,7 @@
     <meta charset="UTF-8" http-equiv="Content-Type">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0">
-    <meta name="mobile-web-app-capable" content="no">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no" />
 
     <!-- TODO: search engine info -->
@@ -40,6 +40,20 @@
     <script src="assets/js/lib/jquery-sakura.js"></script>
     <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script src="./assets/js/scripts.js"></script>
+    <script>
+        $(document).ready(function(){
+            if (navigator.userAgent.indexOf('iPhone') != -1) {
+                addEventListener("load", function() {
+                    setTimeout(hideURLbar, 0);    }, false);
+            }
+            else {
+                hideURLbar();
+            }
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+        });
+    </script>
 </head>
 
 <body>

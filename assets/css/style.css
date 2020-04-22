@@ -361,6 +361,7 @@ section .cont_box {
 }
 
 section .cont_box.main {
+    min-height: calc(100vh - 50px);
     height: calc(100% - 50px);
     position: relative;
     background: 0 0;

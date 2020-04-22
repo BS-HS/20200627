@@ -342,7 +342,7 @@ header nav ul li a.on {
 
 section {
     width: 100%;
-    height: calc(100% - 50px);
+    height: 100%;
     position: relative;
     overflow-y: auto;
     scroll-behavior: smooth;
@@ -360,7 +360,7 @@ section .cont_box {
 }
 
 section .cont_box.main {
-    height: 100%;
+    height: calc(100% - 50px);
     position: relative;
     background: 0 0;
     z-index: 1

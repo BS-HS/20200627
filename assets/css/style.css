@@ -482,7 +482,7 @@ section .cont_box.sub01:after, section .cont_box.sub02:after {
 }
 
 section .cont_box.sub01:after {
-    background: url(../images/sub01_bg.webp) no-repeat;
+    background: url(../images/sub01_bg.jpg) no-repeat;
     top: 0;
     left: 0;
     background-size: 100%;
@@ -586,7 +586,7 @@ section .cont_box.sub02 {
 }
 
 section .cont_box.sub02:after {
-    background: url(../images/sub02_bg.webp) no-repeat;
+    background: url(../images/sub02_bg.jpg) no-repeat;
     background-position: bottom;
     left: 0;
     bottom: 0;
@@ -697,21 +697,21 @@ section .cont_box.sub03 .map .map_btn .fr a:after {
 }
 
 section .cont_box.sub03 .map .map_btn .fr a.kakao_map:after {
-    background-image: url(../images/kakaomap.webp);
+    background-image: url(../images/kakaomap.jpg);
     width: 18px;
     height: 24px;
     margin-left: -9px
 }
 
 section .cont_box.sub03 .map .map_btn .fr a.t_map:after {
-    background-image: url(../images/tmap.webp);
+    background-image: url(../images/tmap.jpg);
     width: 18px;
     height: 26px;
     margin-left: -9px
 }
 
 section .cont_box.sub03 .map .map_btn .fr a.kakao_navi:after {
-    background-image: url(../images/kakaonavi.webp);
+    background-image: url(../images/kakaonavi.png);
     width: 22px;
     height: 26px;
     margin-left: -11px
@@ -758,7 +758,7 @@ section .cont_box.sub04 .contact .contact_box > li h3 {
 section .cont_box.sub04 .contact .contact_box > li h3:after {
     display: block;
     content: "";
-    background: url(../images/contack02.webp) no-repeat;
+    background: url(../images/contack02.jpg) no-repeat;
     width: 85px;
     height: 85px;
     position: absolute;
@@ -785,7 +785,7 @@ section .cont_box.sub04 .contact .contact_box > li:first-child {
 section .cont_box.sub04 .contact .contact_box > li:first-child h3:after {
     display: block;
     content: "";
-    background: url(../images/contack01.webp) no-repeat;
+    background: url(../images/contack01.jpg) no-repeat;
     width: 85px;
     height: 85px;
     position: absolute;
@@ -890,7 +890,7 @@ section .cont_box .cont_title h2 {
 section .cont_box .cont_title h2:after {
     display: block;
     content: "";
-    background: url(../images/title_icon.webp) no-repeat;
+    background: url(../images/title_icon.png) no-repeat;
     width: 50px;
     height: 20px;
     background-size: 100% 100%;

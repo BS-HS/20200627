@@ -697,14 +697,14 @@ section .cont_box.sub03 .map .map_btn .fr a:after {
 }
 
 section .cont_box.sub03 .map .map_btn .fr a.kakao_map:after {
-    background-image: url(../images/kakaomap.jpg);
+    background-image: url(../images/kakaomap.png);
     width: 18px;
     height: 24px;
     margin-left: -9px
 }
 
 section .cont_box.sub03 .map .map_btn .fr a.t_map:after {
-    background-image: url(../images/tmap.jpg);
+    background-image: url(../images/tmap.png);
     width: 18px;
     height: 26px;
     margin-left: -9px

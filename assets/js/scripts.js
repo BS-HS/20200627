@@ -154,6 +154,10 @@ $(document).ready(function(){
         }
     };
 
+    $('.modal .close').on('click', function () {
+        modal.close();
+    });
+
     $(document).on('click', '.modal .close', function(){
         window.history.back();
     });
